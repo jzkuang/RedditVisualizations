@@ -26,5 +26,6 @@ water_levels_year <- water_levels %>%
 
 ggplot(water_levels_year, aes(x = Year, y = Avg_Elevation)) +
   geom_line() +
-  theme_classic() +
-  labs(y = "Average Yearly Water Elevation")
+  theme_bw() +
+  labs(y = "Average Yearly Water Elevation (Feet)") +
+  scale_x_continuous(limits = c(1970, 2020))
